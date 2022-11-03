@@ -1,0 +1,15 @@
+<p metal:use-macro="context/header/macros/header"></p>
+
+<main>
+        <h2>Refer&ecirc;ncias Bibliogr&aacute;ficas</h2>
+            <ul>
+                <li><a class="refs" href="https://www.virtualbox.org/" target="_blank">Virtual Box</a>
+                <li><a class="refs" href="https://www.linuxmint.com/" target="_blank">Linux Mint</a>
+                <li><a class="refs" href="https://www.python.org/" target="_blank">Python</a>
+                <li><a class="refs" href="https://zope.readthedocs.io/en/2.13/index.html" target="_blank">Zope 2.13 documentation</a>
+                <li><a class="refs" href="https://www.postgresql.org/" target="_blank">PostgreSQL</a>
+                <li><a class="refs" href="https://www.psycopg.org/docs/" target="_blank">Psycopg2</a>
+            </ul>
+</main>
+
+<p metal:use-macro="context/footer/macros/footer"></p>

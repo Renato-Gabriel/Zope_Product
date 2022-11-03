@@ -1,0 +1,7 @@
+    <body>
+        Defina uma instancia para Treinamento_Produto:<br>
+        <form name="form" action="addFirstProduct"><br>
+            <input type="text" name="id"><br>
+            <input type="submit" value="add">
+        </form>
+    </body>

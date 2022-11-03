@@ -1,0 +1,32 @@
+<p metal:use-macro="context/header/macros/header"></p>
+
+<div>
+    <main>
+        <h2>Etapas:</h2>
+        <ol>
+            <li>Download do VirtualBox
+            <li>Download do Linux
+            <li>Configura&ccedil;&atilde;o da M&aacute;quina Virtual
+        </ol>
+        <h3>1. Oracle VM VirtualBox</h3>
+        <p>Ser&aacute; necess&aacute;rio emular o Linux na sua m&aacute;quina, caso seu Windows n&atilde;o seja uma vers&atilde;o Pro, fa&ccedil;a download do VirtualBox.</p>
+        <h3>2. Linux</h3>
+        <p>Fa&ccedil;a download da vers&atilde;o do Linux, nesse exemplo utilizaremos a vers&atilde;o Mint.</p>
+        <h3>3. Configura&ccedil;&atilde;o da M&aacute;quina Virtual</h3>
+        <ol type="a">
+            <li>Acesse a BIOs do seu computador.
+            <li>Por padr&atilde;o a placa vem com a op&ccedil;&atilde;o de virtualiza&ccedil;&atilde;o desabilitada. Habilite o campo "SVM Mode"
+            <li>Abra o Virtual Box
+            <li>Siga conforme as imagens a seguir:
+        </ol>
+        <div class="photos">
+            <img src ="images/img_1.png" alt="Tela de instala&ccedil;&atilde;o do Virtual Box"><br>
+            <img src="images/img_2.PNG" alt="Tela de instala&ccedil;&atilde;o do Virtual Box"><br>
+            <img src="images/img_3.PNG" alt="Tela de instala&ccedil;&atilde;o do Virtual Box"><br>
+            <img src="images/img_4.PNG" alt="Tela de instala&ccedil;&atilde;o do Virtual Box"><br>
+            <img src="images/img_5.PNG" alt="Tela de instala&ccedil;&atilde;o do Virtual Box">
+        </div>
+    <main>
+</div>
+
+<p metal:use-macro="context/footer/macros/footer"></p>

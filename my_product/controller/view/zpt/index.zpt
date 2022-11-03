@@ -1,0 +1,8 @@
+<p metal:use-macro="context/header/macros/header"></p>
+
+<main>
+        <h2>Ol&aacute;, Renato!</h2>
+        <p>Esse &eacute; um guia de configura&ccedil;&atilde;o b&aacute;sica do dispositivo para in&iacute;cio de trabalho.</p>
+</main>
+
+<p metal:use-macro="context/footer/macros/footer"></p>

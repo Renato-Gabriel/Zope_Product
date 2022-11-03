@@ -1,0 +1,7 @@
+<div metal:define-macro="footer">
+
+<footer>
+      The information provided by Tutotial Noob on http://localhost:8080/site_dinamico_dtml/index is for general informational purposes only. All information on the Site is provided in good faith, non-profit.
+</footer>
+
+</div>

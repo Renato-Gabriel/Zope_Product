@@ -1,0 +1,48 @@
+<p metal:use-macro="context/header/macros/header"></p>
+
+<main>
+        <h2>Etapas:</h2>
+        <ol>
+            <li>Download Python2
+            <li>Configurar Venv
+            <li>Download pip
+            <li>Download Zope 2.13.X
+        </ol>
+        <h2>Python2</h2>
+        <p>Por padr&atilde;o o Mint vem apenas com o Python 3 instalado, utilize o c&oacute;digo abaixo para instalar a &uacute;ltima atualiza&ccedil;&atilde;o liberada da vers&atilde;o 2.</p>
+        <code>
+            sudo apt install python2-dev
+        </code>
+        <h2>PIP</h2>
+        <p>Instale o pip (gerenciador de pacotes) para o python 2 e em seguida verifique a vers&atilde;o instalada para se assegurar que &eacute; a referente ao python2:</p>
+        <code>
+            sudo apt install python-pip
+            pip2 --version
+        </code>
+        <h2>Configurar Virtual Environment</h2>
+        <p>Utilize o c&oacute;digo a seguir para instalar o virtualenv e em seguida criar um ambiente virtual:</p>
+        <code>
+            sudo apt install python-virtualenv
+            virtualenv -p /usr/bin/python2.7 *DEFINA_UM_NOME*
+        </code>
+        <h2>Zope 2.13.X</h2>
+        <p>Acesse o ambiente virtual criado e prossiga com a instala&ccedil;&atilde;o do Zope.</p>
+        <code>
+            bin/easy_install -i http://download.zope.org/Zope2/index/2.13.26 Zope2
+        </code><br>
+        <div class="photos">
+            <img src="imagens/img_z1.PNG" alt="imagem exemplificando o c&oacute;digo">
+        </div>
+        <p>Conclu&iacute;da a instala&ccedil;&atilde;o, defina um diret&oacute;rio, um nome de usu&aacute;rio e uma senha.</p>
+        <code>
+            bin/mkzopeinstance
+        </code>
+        <div class="photos">
+            <img src="imagens/img_z2.PNG" alt="imagem exemplificando o c&oacute;digo">
+        </div>
+        <h2><a class="refs" target="frame_1" href="https://zope.readthedocs.io/en/2.13/index.html">Zope 2 Documentation</a></h2>
+        
+        <iframe name="frame_1" frameborder="0"><p>Erro no carregamento da p&aacute;gina.<a href="https://zope.readthedocs.io/en/2.13/index.html">Clique aqui</a></p></iframe>
+</main><br>
+
+<p metal:use-macro="context/footer/macros/footer"></p>

@@ -1,0 +1,1 @@
+delete from stocks where id=<dtml-sqlvar id type="int">

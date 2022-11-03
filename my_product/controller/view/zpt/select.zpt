@@ -1,0 +1,39 @@
+<p metal:use-macro="context/header/macros/header"></p>
+
+<table>
+    <caption>Tabela:"stocks" - database:"treinamento_db"</caption>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>STOCK</th>
+            <th>C&Oacute;DIGO</th>
+            <th>QUANTIDADE</th>
+            <th>VALOR</th>
+        </tr>
+    </thead>
+        <tbody>
+        <tr tal:repeat="stocks options/dados">
+            <form action="c_update" method="post" autocomplete="off">
+                <td><p tal:content="stocks/id"></p><input type="hidden" name="id" tal:attributes="value stocks/id"></td>
+                <td><input type="text" name="stock" size="10" tal:attributes="value stocks/stock"></td>
+                <td><input type="text" name="codigo" size="10" tal:attributes="value stocks/codigo"></td>
+                <td><input type="number" name="quantidade" size="10" tal:attributes="value stocks/quantidade"></td>
+                <td><input type="text" name="valor" size="10" tal:attributes="value stocks/valor"></td>
+                <td class="table_att"><input class="table_att" type="submit" value="Atualizar"></td>
+                <td class="table_att"><a tal:attributes="href string:c_delete?id=${stocks/id}">Excluir</a></td>
+            </form>
+        </tr>
+        <tr>
+            <form action="c_insert" method="post" autocomplete="off">
+                <td></td>
+                <td><input type="text" size="10" name="stock"></td>
+                <td><input type="text" size="10" name="codigo"></td>
+                <td><input type="number" size="10" name="quantidade"></td>
+                <td><input type="text" size="10" name="valor"></td>
+                <td class="table_att"><button class="table_att" type="submit">Adicionar</button></td>
+            </form>
+        </tr>
+    </tbody>
+</table>
+
+<p metal:use-macro="context/footer/macros/footer"></p>
